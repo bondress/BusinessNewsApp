@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeightLarge"
+    android:background="@color/listItemBackground"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/list_item_layout_padding_or_margin"
+    android:paddingLeft="@dimen/list_item_layout_padding_or_margin"
+    android:paddingRight="@dimen/list_item_layout_padding_or_margin"
+    android:paddingStart="@dimen/list_item_layout_padding_or_margin"
+    android:paddingTop="@dimen/list_item_layout_padding_or_margin">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/headline_text_view"
+            style="@style/HeadlineTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/headline" />
+
+        <TextView
+            android:id="@+id/author_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AuthorTextStyle"
+            tools:text="@string/author" />
+
+        <TextView
+            android:id="@+id/trail_text_view"
+            style="@style/TrailTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/trail_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/list_item_layout_padding_or_margin"
+        android:layout_marginStart="@dimen/list_item_layout_padding_or_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/section_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SectionTextStyle"
+            tools:text="@string/section" />
+
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            tools:text="@string/date" />
+
+        <TextView
+            android:id="@+id/time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            tools:text="@string/time" />
+    </LinearLayout>
+</LinearLayout>

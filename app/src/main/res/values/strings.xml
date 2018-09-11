@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Business News App</string>
+
+    <!-- Text to display in the list when there is no News to display -->
+    <string name="no_news">No news to display :(</string>
+
+    <!-- Error message when there is no internet connectivity -->
+    <string name="no_internet_connection">No internet connection. :(</string>
+
+    <!-- Placeholder strings (These do not appear in the app) -->
+    <string name="headline">headline</string>
+    <string name="trail_text">trail text</string>
+    <string name="date">date</string>
+    <string name="time">time</string>
+    <string name="author">author</string>
+    <string name="section">section</string>
+</resources>
